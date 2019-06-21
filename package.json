@@ -1,0 +1,76 @@
+{
+	"name": "kawasaki-as-syntax",
+	"displayName": "Kawasaki AS Colorizer",
+	"description": "Syntax highlighting for kawasaki as files",
+	 "version": "0.0.1",
+	"publisher": "KRSoftware",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"author": {
+		"name": "Kyle Rassweiler",
+		"email": "kylerassweiler@gmail.com"
+	},
+	"contributors": [
+		{
+			"name": "Kyle Rassweiler",
+			"email": "kylerassweiler@gmail.com"
+		}
+	],
+	"contributes": {
+		 "languages": [
+			{
+				"id": "As",
+				"aliases": [
+					"as"
+				],
+				"extensions": [
+					".as"
+				],
+				"configuration": "./as.configuration.json",
+				"mimetypes": [
+					"as",
+					"text/as",
+					"text/x-as",
+					"text/x-code-output",
+					"x-code-output"
+				]
+			}
+		 ],
+		 "grammars": [
+			{
+				"language": "As",
+				"scopeName": "code.as",
+				"path": "./syntaxes/as.tmLanguage"
+			}
+		 ]
+	},
+	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-vinyl-zip": "^1.2.2",
+		"vscode": "^0.11.0"
+	},
+	"galleryBanner": {
+		"color": "#f2f2f2",
+		"theme": "light"
+	},
+	"icon": "Icon/icon.png",
+	"bugs": {
+		"url": ""
+	},
+	"license": "MIT",
+	"homepage": "",
+	"keywords": [
+		"KR",
+		"AS",
+		"kawasaki",
+		"output"
+	]
+}
